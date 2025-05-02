@@ -28,19 +28,19 @@ function App() {
 
   const onClickNext = () => {
     if ( offSet < 500) {
-      setPage(prev => prev + 20);
+      setOffset(prev => prev + 20);
     }
     else {
-      setPage([20]);
+      setOffset(20);
     }
   };
 
   const onClickBack = () => {
     if ( offSet >= 20) {
-      setPage(prev => prev - 20);
+      setOffset(prev => prev - 20);
     }
     else {
-      setPage(offSet = 20);
+      setOffset(500);
     }
   };
 
